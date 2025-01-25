@@ -1,0 +1,57 @@
+Test Case 1
+•	Test Case ID: TC_UI_01
+•	Scenario: Verify the dashboard loads correctly for users with extensive trading history.
+•	Steps:
+1.	Log in with a user account having a large number of trades.
+2.	Navigate to the "Personalized Portfolio Insights" dashboard.
+3.	Observe load time and dashboard elements.
+•	Expected Result: The dashboard loads within acceptable time frames (e.g., <3 seconds), displaying all elements correctly.
+
+Test Case 2
+•	Test Case ID: TC_FN_02
+•	Scenario: Validate the accuracy of personalized performance metrics.
+•	Steps:
+1.	Note down the user’s trading history and subscription details.
+2.	Calculate expected performance metrics manually or using a trusted tool.
+3.	Compare the manual calculations with the insights displayed on the dashboard.
+•	Expected Result: The dashboard’s performance metrics match the manually calculated results.
+Test Case 3
+•	Test Case ID: TC_US_03
+•	Scenario: Assess the usability of the dashboard’s filtering feature.
+•	Steps:
+1.	Access the dashboard.
+2.	Use the filter options to sort insights by date range, asset type, and strategy.
+3.	Evaluate the ease of use and responsiveness of the filters.
+•	Expected Result: Filters work smoothly, updating insights accurately based on selected criteria.
+... (continue with additional test cases for regression, API testing, etc.)
+3. Automation Plan
+Automation Strategy:
+•	Regression Tests: Automate to make sure new updates don’t break existing features.
+•	Functional Tests: Automate key user flows like loading the dashboard, filtering data, and generating reports.
+•	API Tests: Automate the testing of APIs that fetch and post data to ensure reliability.
+Tools to Use:
+•	Selenium: For browser automation and UI testing.
+•	PyTest: Testing framework for structuring tests.
+•	Requests: For automating API testing.
+
+sample code 
+
+from selenium import webdriver
+
+driver = webdriver.Chrome()
+driver.get("https://moneyy.ai/login")
+
+# Log in
+driver.find_element_by_id("username").send_keys("testUser")
+driver.find_element_by_id("password").send_keys("password123")
+driver.find_element_by_id("loginButton").click()
+
+# Navigate to Dashboard
+driver.find_element_by_id("portfolioInsightsNav").click()
+
+# Verify Dashboard Title
+dashboard_title = driver.title
+assert dashboard_title == "Personalized Portfolio Insights"
+
+driver.quit()
+
