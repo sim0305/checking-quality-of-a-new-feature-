@@ -1,0 +1,19 @@
+Assuming an SQL database, you might use queries like:
+Query 1: Verify User Insights Data
+sql
+SELECT * FROM UserInsights
+WHERE UserID = 'testUserID';
+It Ensures that the insights displayed correspond to the correct user data.
+
+Query 2: Check Data Consistency Across Tables
+sql
+SELECT ui.InsightID, ui.MetricValue, th.TransactionAmount
+FROM UserInsights ui
+JOIN TradingHistory th ON ui.UserID = th.UserID
+WHERE ui.UserID = 'testUserID';
+
+It Validates that insights are accurately generated based on the user’s trading history.
+
+Why These Queries Are Important:
+•	Data Accuracy: Confirm that data displayed to users is correct and consistent with what's stored in the database.
+•	Integrity Checks: Identify discrepancies to avoid potential financial misrepresentations.
