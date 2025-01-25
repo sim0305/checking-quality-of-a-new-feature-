@@ -1,0 +1,24 @@
+Moneyy.ai is rolling out a new feature:
+"Personalized Portfolio Insights" – A dashboard providing tailored investment insights based on a user's subscription and trading history.
+
+Deliverables:
+1. Requirements Review
+Feature Understanding:
+The "Personalized Portfolio Insights" dashboard aims to deliver tailored investment advice, capitalizing on the user’s subscription details and trading history. Essentially, this feature should analyze a user’s past trades, current holdings, and subscribed strategies to generate unique insights for each user.
+Key Functional Requirements:
+•	Data Integration: The dashboard should seamlessly combine data from user subscriptions and trading history.
+•	Tailored Insights: Provision of personalized analytics, such as performance metrics, risk assessments, and suggested actions.
+•	Interactive UI: Users should be able to interact with the dashboard—filtering data, customizing views, and accessing detailed reports.
+•	Real-Time Updates: Display the latest trading activities and market changes in the insights provided.
+Non-Functional Requirements:
+•	Performance: The dashboard should load quickly and handle large volumes of data without lag.
+•	Accuracy: All insights and data presented must be accurate and relevant.
+•	Security: Ensure user data protection and compliance with data regulations.
+•	Compatibility: Accessible across various devices and browsers (responsive design).
+•	Usability: The interface should be intuitive and user-centric.
+Critical Areas to Test:
+•	Performance Testing: Ensure quick load times and smooth interactions.
+•	Data Accuracy: Validate that all personalized insights reflect the user’s data correctly.
+•	Security Testing: Check for vulnerabilities in data handling and storage.
+•	Compatibility Testing: Verify functionality across different devices, browsers, and operating systems.
+•	Usability Testing: Assess the intuitiveness and accessibility of the user interface.
